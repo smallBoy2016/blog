@@ -1,0 +1,28 @@
+/*reset*/
+li{list-style: none;}
+a{text-decoration: none;}
+body{
+	background: #ccc;
+	font-family: 'Microsoft YaHei';
+	font-size: 12px;
+}
+/*nav start*/
+nav{
+	background: #fff;
+	font-size: 16px;
+	height: 70px;
+	line-height: 70px;
+}
+nav ul li{
+	float: left;
+	display: inline-block;
+	width: 70px;
+}
+nav ul li a{
+	color: #666;
+}
+
+/*section start*/
+section{
+	margin-top: 20px;
+}
