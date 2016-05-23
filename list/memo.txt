@@ -1,0 +1,10 @@
+
+制作公司官网
+
+编写JS组件。
+
+jQuery mobile 基本的页面制作。
+
+
+练习angulajs
+

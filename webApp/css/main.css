@@ -1,0 +1,77 @@
+/*Copyright 2016 @http://www.sz-net.net*/
+/*reset*/
+body,h1,h2,h3,h4,h5,p,dl,dd,ul,ol,form,input,textarea,th,td,select{
+	margin:0; padding:0;
+}
+body{
+	font-family: 'Microsoft YaHei';
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+
+/*nav start*/
+nav{
+	background: #091523;
+}
+.nav{
+	height: 60px;
+	font-size: 16px;
+}
+nav .img{
+	line-height: 57px;
+}
+nav ul>li{
+	display: inline-block;
+	width: 100px;
+	line-height: 56px;
+	margin-left: 8px;
+	text-align: center;
+}
+nav ul>li:hover{
+	border-bottom: 2px solid #fff;
+}
+nav ul>li>a{
+	color: #DBDBDB;
+}
+nav ul>li>a:hover{
+	color: #fff;
+	font-weight: 600;
+	text-decoration: none;
+	
+}
+
+/*end nav*/
+
+/*banner start*/
+.banner{
+	width: 100%;
+	height: 450px;
+	margin-top: 60px;
+	position: relative;
+	background: url(../images/Banner-3.png)center;
+}
+/*.banner img{
+	width: 100%;
+	height: 450px;
+}*/
+.banner .button{
+	width: 200px;
+	height: 20px;
+	position: absolute;
+	bottom:10px;left: 38%;
+
+}
+.banner .button ul>li{
+	display: inline-block;
+	width: 40px;height: 10px;
+	background: #aaa;
+	margin-left: 18px;
+	border-radius: 6px;
+	cursor: pointer;
+}
+/*end banner*/

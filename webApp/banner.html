@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{margin:0;padding: 0;}
+		#box{border: 1px solid #ccc;width: 200px;height: 200px;
+			margin:100px auto;overflow: hidden;
+		}
+		#box ul li{
+			list-style: none;
+			display: inline-block;
+			width: 200px;height: 200px;
+		}
+	</style>
+</head>
+<body>
+
+
+
+<div id="box">
+	<ul>
+		<li style="background:red;"></li>
+		<li style="background:yellow;"></li>
+		<li style="background:blue;"></li>
+	</ul>
+</div>
+
+<script src="js/jQuery.min.js"></script>
+<script>
+	$(function(){
+		$('#box').click(function(){
+			// alert(1);
+		});
+	});
+
+	每隔3秒，自动切换banner图，同时相对应的焦点也跟着变色。
+</script>
+</body>
+</html>
