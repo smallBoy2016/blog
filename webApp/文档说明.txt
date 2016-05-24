@@ -3,15 +3,30 @@ create
 ++++++++++++
 
 nav
-
+	navbar
+		logo
+		title
 banner
 
 sub-box 180
-
-serve
+	box
+	boxH
+	boxC	
+	
+serve（165|135--165|270）
 
 about
+	content
 
-加入恩易特
+
+加入恩易特(200*430|250*530)
+join
+	employment
+	
+		employText
+
 
 练习我们
+加入字体图标
+
+**把小的图片合成一个图层。

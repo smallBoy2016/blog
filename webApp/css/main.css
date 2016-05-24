@@ -1,8 +1,9 @@
 /*Copyright 2016 @http://www.sz-net.net*/
 /*reset*/
-body,h1,h2,h3,h4,h5,p,dl,dd,ul,ol,form,input,textarea,th,td,select{
+*{margin:0; padding:0;}
+/*body,h1,h2,h3,h4,h5,p,dl,dd,ul,ol,form,input,textarea,th,td,select{
 	margin:0; padding:0;
-}
+}*/
 body{
 	font-family: 'Microsoft YaHei';
 }
@@ -12,31 +13,46 @@ ul,li{
 a{
 	text-decoration: none;
 }
-
+.fl{
+	float: left;
+}
 
 /*nav start*/
 nav{
+	width: 100%;
 	background: #091523;
-}
-.nav{
 	height: 60px;
-	font-size: 16px;
 }
-nav .img{
-	line-height: 57px;
+.navbar{
+	height: 60px;
+	width: 960px;
+	margin:0 auto;
 }
-nav ul>li{
+.logo{
+	width: 300px;
+	height: 100%;
+}
+nav img{
+	margin-top: 10px;
+}
+.title{
+	width: 660px;
+	height: 100%;
+}
+.title ul>li{
 	display: inline-block;
 	width: 100px;
 	line-height: 56px;
-	margin-left: 8px;
+	margin-left: 16px;
 	text-align: center;
+	color: #fff;
 }
-nav ul>li:hover{
+.title ul>li:hover{
 	border-bottom: 2px solid #fff;
 }
 nav ul>li>a{
 	color: #DBDBDB;
+	font-size: 16px;
 }
 nav ul>li>a:hover{
 	color: #fff;
@@ -51,19 +67,15 @@ nav ul>li>a:hover{
 .banner{
 	width: 100%;
 	height: 450px;
-	margin-top: 60px;
 	position: relative;
 	background: url(../images/Banner-3.png)center;
 }
-/*.banner img{
-	width: 100%;
-	height: 450px;
-}*/
+
 .banner .button{
 	width: 200px;
 	height: 20px;
 	position: absolute;
-	bottom:10px;left: 38%;
+	bottom:10px;left: 43%;
 
 }
 .banner .button ul>li{
@@ -75,3 +87,223 @@ nav ul>li>a:hover{
 	cursor: pointer;
 }
 /*end banner*/
+/*sub-box start*/
+
+.subBox{
+	width: 960px;
+	height: 120px;
+	margin: 20px auto;
+
+}
+.box{
+	width: 270px;height: 110px;
+	margin-left:34px;
+	position: relative;
+	background-size: 240px 110px;
+}
+.boxH{
+	position: absolute;
+	right: 6px;color:#000;
+	top: 6px;
+	font-size: 14px;
+	line-height: 30px;
+	height: 26px;width: 174px;
+}
+.boxH span{
+	color:#1ACBFE;
+	font-size: 12px;
+}
+.boxC{
+	position: absolute;
+	right: 6px;top: 36px;
+	font-size: 12px;
+	color: #7b7b7b;
+	border-top: 1px solid #ccc;
+	width: 160px;height: 48px;
+}
+.box a{
+	color: #FFD18C;
+	position: absolute;
+	bottom: 4px;right: 6px;
+}
+.bg1{
+	background: url(../images/MainCard-1.png);
+	background-size: 274px 112px;
+}
+.bg2{
+	background: url(../images/MainCard-2.png);
+	background-size: 274px 112px;
+}
+.bg3{
+	background: url(../images/MainCard-3.png);
+	background-size: 274px 112px;
+}
+/*end sub-box*/
+
+
+
+/*about start*/
+.about{
+	height: 320px;
+	background:#fff;
+}
+.content{
+	width: 960px;
+	height: 300px;
+	margin:60px auto;
+}
+.content p{
+	text-indent: 2em;
+}
+/*end about*/
+
+/*serve start*/
+.serve{
+	width: 960px;
+	height: 450px;
+	border: 1px solid #ccc;
+	margin:0 auto;
+	position: relative;
+}
+.serve ul>li{
+	border-radius: 6px;
+}
+.serve ul>li:hover{
+	box-shadow: inset 0 0 20px #ccc;
+}
+.serve ul>li:nth-child(1){
+	width: 165px;height: 270px;
+	position: absolute;
+	top: 10px;left: 27px;
+	border: 1px solid #ccc;
+}
+.serve ul>li:nth-child(2){
+	width: 165px;height: 135px;
+	position: absolute;
+	top: 10px;left: 212px;
+	border: 1px solid #ccc;
+}
+.serve ul>li:nth-child(3){
+	width: 165px;height: 270px;
+	position: absolute;
+	top: 10px;left: 397px;
+	border: 1px solid #ccc;
+}
+.serve ul>li:nth-child(4){
+	width: 165px;height: 135px;
+	position: absolute;
+	top: 10px;left: 582px;
+	border: 1px solid #ccc;
+}
+.serve ul>li:nth-child(5){
+	width: 165px;height: 135px;
+	position: absolute;
+	top: 10px;left: 767px;
+	border: 1px solid #ccc;
+}
+.serve ul>li:nth-child(6){
+	width: 165px;height: 135px;
+	position: absolute;
+	top: 300px;left: 27px;
+	border: 1px solid #ccc;
+}
+.serve ul>li:nth-child(7){
+	width: 165px;height: 270px;
+	position: absolute;
+	top: 165px;left: 212px;
+	border: 1px solid #ccc;
+}
+.serve ul>li:nth-child(8){
+	width: 350px;height: 135px;
+	position: absolute;
+	top: 300px;left: 397px;
+	border: 1px solid #ccc;
+}
+.serve ul>li:nth-child(9){
+	width: 165px;height: 115px;
+	position: absolute;
+	top: 165px;left: 582px;
+	border: 1px solid #ccc;
+}
+.serve ul>li:nth-child(10){
+	width: 165px;height: 270px;
+	position: absolute;
+	top: 165px;left: 767px;
+	border: 1px solid #ccc;
+}
+/*end serve*/
+
+/*join start*/
+.join{
+	width: 100%;
+	height: 600px;
+}
+.employment{
+	width: 960px;
+	height: 100%;
+	border: 1px solid #ccc;
+	margin:0 auto;
+
+}
+.employment ul>li{
+	display: inline-block;
+	width: 200px;
+	height: 430px;
+	border: 1px solid #ccc;
+	float: left;
+	margin-left: 90px;
+	margin-top: 80px;
+	opacity: .8;
+	position: relative;
+	border-radius: 6px;
+}
+.employment h4{
+	text-align: center;
+	padding:18px 6px;
+}
+.employment img{
+	margin-left: 30%;
+	background: #091523;
+	border-radius:50%;
+}
+
+.employText{
+	width: 180px;
+	height: 250px;
+	padding-left: 8px;
+	overflow: hidden;
+	font-size: 12px;
+}
+.employment a{
+	position: absolute;
+	bottom: 6px;right: 6px;
+	font-size: 14px;
+	color: #999;
+}
+/*end join*/
+
+/*footer start*/
+footer{
+	width: 100%;
+	height: 180px;
+	background: #222;
+}
+footer p{
+	color: #fff;
+	font-size: 10px;
+}
+.codeLogo{
+	width: 105px;
+	height: 105px;
+	background: url(../images/Code-Logo.png);
+}
+/*end footer*/
+
+
+
+
+
+
+
+
+
