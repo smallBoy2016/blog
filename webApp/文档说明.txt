@@ -7,7 +7,9 @@ nav
 		logo
 		title
 banner
-
+	bannerImg
+	button
+*-----------------
 sub-box 180
 	box
 	boxH
@@ -18,7 +20,10 @@ serve（165|135--165|270）
 about
 	content
 
-
+----------------
+case
+	caseHead
+	caseContent
 加入恩易特(200*430|250*530)
 join
 	employment

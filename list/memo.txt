@@ -1,7 +1,14 @@
 
 制作公司官网
+	页面布局
+	js动态效果
 
-编写JS组件。
+js运动。
+
+下载WEB前端+python，极客视频资料，并上传到360网盘
+
+收录编写JS组件。
+	JQ|JS的banner轮展图。
 
 jQuery mobile 基本的页面制作。
 

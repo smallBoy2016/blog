@@ -27,6 +27,13 @@
 <!-- banner start -->
 
 <div class="banner">
+	<div class="bannerImg">
+		<ul>
+			<li><img src="images/Banner-1.png" alt=""></li>
+			<li><img src="images/Banner-2.png" alt=""></li>
+			<li><img src="images/Banner-3.png" alt=""></li>	
+		</ul>
+	</div>
 	<div class="button">
 		<ul>
 			<li></li>
@@ -97,6 +104,32 @@
 
 <!-- end serve -->
 
+<!-- case start -->
+<div class="case">
+	<div class="caseHead" id="caseHead">
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+		</ul>
+	</div>
+	<div class="caseContent" id="caseContent">
+		<ul>
+			<li>1111</li>
+			<li>2222</li>
+			<li>3333</li>
+			<li>4444</li>
+			<li>5555</li>
+		</ul>
+	</div>
+</div>
+
+<!-- end case -->
+
+
+
 <!-- join start -->
 <div class="join">
 	<div class="employment">
@@ -158,18 +191,18 @@
 
 <!-- footer start -->
 <footer>
-    <div class="container">
-        <div class="row">
-        	<div class="col-md-1 col-md-offset-1 codeLogo"></div>
-            <div class="col-md-10">
-                <p>
-                    Copyright&nbsp;©&nbsp;&nbsp;苏州恩易特网络科技</br>联系电话&nbsp;:&nbsp;&nbsp;0512-62906268</br>
-					苏JCP备&nbsp;08018137号</br>
-                    公司地址&nbsp;:&nbsp;苏州工业园区金鸡湖大道国际科技园
-                </p>
-            </div>
-        </div>
-    </div>
+	<div class="footer">
+		<div class="codeLogo fl"></div>
+		<div class="fl">
+		    <p>
+		        Copyright&nbsp;©&nbsp;&nbsp;苏州恩易特网络科技</br>
+		        联系电话&nbsp;:&nbsp;&nbsp;0512-62906268</br>
+				苏JCP备&nbsp;08018137号</br>
+				邮箱&nbsp;:&nbsp;enyite@sz-net.net<br>
+		        公司地址&nbsp;:&nbsp;苏州工业园区金鸡湖大道国际科技园
+		    </p>
+		</div>		
+	</div>
 </footer>
 
 <!-- end footer -->
@@ -199,6 +232,32 @@
 			// alert(1);
 		});
 	});
+
+var oCaseHead = document.getElementById('caseHead');
+var aLi = oCaseHead.getElementsByTagName('li');
+
+var oCaseContent = document.getElementById('caseContent');
+var aLi2 = oCaseContent.getElementsByTagName('li');
+
+var index = 0;
+
+
+
+for(var i=0;i<aLi.length;i++){
+	aLi[i].onclick = function(){
+
+		var on = true;			
+		if(on){
+			aLi2[index].style.background = 'red';
+		}else{
+			aLi2[index].style.background = '';
+		}
+
+		// aLi2[index].style.background = 'red';
+		// alert(index);
+		index ++;
+	};
+}
 </script>
 </body>
 </html>
