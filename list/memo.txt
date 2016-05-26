@@ -5,7 +5,7 @@
 
 js运动。
 
-下载WEB前端+python，极客视频资料，并上传到360网盘
+下载WEB前端+python+nodejs专题+php+大数据，极客视频资料，并上传到360网盘
 
 收录编写JS组件。
 	JQ|JS的banner轮展图。
