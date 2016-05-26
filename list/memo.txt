@@ -9,9 +9,15 @@ js运动。
 
 收录编写JS组件。
 	JQ|JS的banner轮展图。
+	标签选项卡
 
 jQuery mobile 基本的页面制作。
 
 
 练习angulajs
 
+
+
++++++++
+吸引力法则三部曲
++++++++

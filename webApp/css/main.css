@@ -12,10 +12,19 @@ ul,li{
 }
 a{
 	text-decoration: none;
+	color: #ccc;
+}
+a:hover{
+	color: #091523;
 }
 .fl{
 	float: left;
 }
+.active{
+	border-bottom: 1px solid #091523;
+	color: #091523;
+}
+
 
 /*nav start*/
 nav{
@@ -46,20 +55,31 @@ nav img{
 	margin-left: 16px;
 	text-align: center;
 	color: #fff;
+	-webkit-transition:all 1s ease;
+	-ms-transition:all 1s ease;
+	transition:all 1s ease;
 }
 .title ul>li:hover{
 	border-bottom: 2px solid #fff;
+	-webkit-transition:all 1s ease;
+	-ms-transition:all 1s ease;
+	transition:all 1s ease;
 }
 nav ul>li>a{
-	color: #DBDBDB;
+	color: #fff;
 	font-size: 16px;
+	-webkit-transition:all 1s ease;
+	-ms-transition:all 1s ease;
+	transition:all 1s ease;
 }
 nav ul>li>a:hover{
 	color: #fff;
-	font-weight: 600;
-	text-decoration: none;
-	
+	-webkit-transition:all 1s ease;
+	-ms-transition:all 1s ease;
+	transition:all 1s ease;
 }
+
+
 
 /*end nav*/
 
@@ -102,7 +122,7 @@ nav ul>li>a:hover{
 .subBox{
 	width: 960px;
 	height: 120px;
-	margin: 20px auto;
+	margin: 40px auto;
 
 }
 .box{
@@ -132,7 +152,6 @@ nav ul>li>a:hover{
 	width: 160px;height: 48px;
 }
 .box a{
-	color: #FFD18C;
 	position: absolute;
 	bottom: 4px;right: 6px;
 }
@@ -154,13 +173,22 @@ nav ul>li>a:hover{
 
 /*about start*/
 .about{
-	height: 320px;
+	width: 960px;
+	height: 340px;
 	background:#fff;
+	margin:10px auto;
+}
+.aboutHead{
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	font-weight: 700;
+	border-bottom: 1px solid #ccc;
 }
 .content{
 	width: 960px;
 	height: 300px;
-	margin:60px auto;
+	margin:20px auto;
 }
 .content p{
 	text-indent: 2em;
@@ -171,16 +199,55 @@ nav ul>li>a:hover{
 .serve{
 	width: 960px;
 	height: 450px;
-	border: 1px solid #ccc;
-	margin:0 auto;
+	margin:10px auto;
+	margin-bottom: 50px;
 	position: relative;
 }
 .serve ul>li{
 	border-radius: 6px;
+	-webkit-transition:all 1s ease;
+	-ms-transition:all 1s ease;
+	transition:all 1s ease;
+	cursor: pointer;
+}
+.serve img{
+	text-align: center;
+	background: #888;
+	border-radius: 50%;
+	margin:10px 0 0 45px;
+	-webkit-transition:all 1s ease;
+	-ms-transition:all 1s ease;
+	transition:all 1s ease;
+}
+.serve h5{
+	text-align: center;
+	color: #888;
+	font-weight: 500;
+	font-size: 14px;
+	margin-top: 6px;
+}
+.serve p{
+	font-size: 14px;
+	color: #888;
+	text-indent: 2em;
+	padding: 8px;
 }
 .serve ul>li:hover{
 	box-shadow: inset 0 0 20px #ccc;
+	-webkit-transition:all 1s ease;
+	-ms-transition:all 1s ease;
+	transition:all 1s ease;
 }
+.serve ul>li:hover img{
+	background: #091523;
+	-webkit-transition:all 1s ease;
+	-ms-transition:all 1s ease;
+	transition:all 1s ease;
+}
+.serve ul>li:hover h5{
+	color: #091523;
+}
+
 .serve ul>li:nth-child(1){
 	width: 165px;height: 270px;
 	position: absolute;
@@ -229,6 +296,16 @@ nav ul>li>a:hover{
 	top: 300px;left: 397px;
 	border: 1px solid #ccc;
 }
+.serve ul>li:nth-child(8) img{
+	margin-top: 30px;
+	margin-left: 10px;
+	float: left;
+}
+.serve ul>li:nth-child(8) div{
+	width: 260px;
+	height: 140px;
+	float: left;
+}
 .serve ul>li:nth-child(9){
 	width: 165px;height: 115px;
 	position: absolute;
@@ -247,23 +324,76 @@ nav ul>li>a:hover{
 .case{
 	height: 500px;width: 960px;
 	margin:20px auto;
-	border: 1px solid #ccc;
 }
 .caseHead{
 	height: 40px;
-	background: #ccc;
+	background: #fff;
+	border-bottom: 1px solid #ccc;
 }
 .caseHead ul li{
 	display: block;
-	width: 190px;
+	width: 192px;
 	float: left;
 	height: 40px;
-	border: 1px solid #999;
+	cursor: pointer;
+	color: #8B8B8B;
+	text-align: center;
+	line-height: 38px;
+	-webkit-transition:all 1s ease;
+	-ms-transition:all 1s ease;
+	transition:all 1s ease;
+}
+.caseHead ul li:hover{
+	border-bottom: 1px solid #091523;
+	color: #091523;
+	-webkit-transition:all 1s ease;
+	-ms-transition:all 1s ease;
+	transition:all .5s ease;
 }
 .caseContent{
-	height: 400px;
-	background: #e3e3e3;
+	height: 456px;
+	width: 960px;
+	overflow: hidden;
 }
+.caseContent ul li{
+	width: 99%;
+	display: block;
+	height: 454px;
+}
+
+#caseContent div{
+	width: 200px;height: 140px;
+	border: 1px solid #ccc;
+	margin-left:20px;
+	margin-top: 20px;
+	border-radius: 6px;
+	-webkit-transition:all 1s ease;
+	-ms-transition:all 1s ease;
+	transition:all 1s ease;
+}
+#caseContent div:hover{
+	box-shadow: 2px 2px 4px #111;
+	-webkit-transition:all 1s ease;
+	-ms-transition:all 1s ease;
+	transition:all 1s ease;
+}
+#caseContent div img{
+	margin-left: 16px;
+	margin-top: 24px;
+}
+#caseContent div p{
+	margin-top: 6px;
+	text-align: center;
+}
+#caseContent div p a{
+	color: #888;
+	font-size: 14px;
+}
+#caseContent div p a:hover{
+	color: #091523;
+	font-size: 14px;
+}
+
 /*end case*/
 
 
@@ -273,25 +403,47 @@ nav ul>li>a:hover{
 .join{
 	width: 100%;
 	height: 600px;
+	margin-bottom: 40px;
+}
+.joinHead{
+	width: 960px;
+	height: 40px;
+	line-height: 40px;
+	margin:0 auto;
+	font-size: 16px;
+	font-weight: 700;
+	border-bottom: 1px solid #ccc;
 }
 .employment{
 	width: 960px;
 	height: 100%;
-	border: 1px solid #ccc;
 	margin:0 auto;
 
 }
 .employment ul>li{
 	display: inline-block;
-	width: 200px;
-	height: 430px;
+	width: 240px;
+	height: 500px;
 	border: 1px solid #ccc;
 	float: left;
-	margin-left: 90px;
-	margin-top: 80px;
+	margin-left: 58px;
+	margin-top: 30px;
+	background: #eee;
 	opacity: .8;
 	position: relative;
 	border-radius: 6px;
+	-webkit-transition:all 1s ease;
+	-ms-transition:all 1s ease;
+	transition:all 1s ease;
+}
+.employment ul>li:hover{
+	background: #fff;
+	opacity: 1;
+	cursor:pointer;
+	box-shadow: 8px 10px 30px #111;
+	-webkit-transition:all 1s ease;
+	-ms-transition:all 1s ease;
+	transition:all 1s ease;
 }
 .employment h4{
 	text-align: center;
@@ -304,24 +456,18 @@ nav ul>li>a:hover{
 }
 
 .employText{
-	width: 180px;
-	height: 250px;
-	padding-left: 8px;
-	overflow: hidden;
+	width: 210px;
+	height: 280px;
 	font-size: 12px;
+	margin:0 auto;
 }
-.employment a{
-	position: absolute;
-	bottom: 6px;right: 6px;
-	font-size: 14px;
-	color: #999;
-}
+
 /*end join*/
 
 /*footer start*/
 footer{
 	width: 100%;
-	height: 180px;
+	height: 240px;
 	background: #091523;
 }
 .footer{
@@ -338,11 +484,13 @@ footer p{
 	color: #fff;
 	font-size: 10px;
 	line-height: 18px;
+	margin-left: -20px;
+	margin-top:28px;
 }
 .codeLogo{
 	width: 105px;
 	height: 105px;
-	margin:30px 80px;
+	margin:60px 80px;
 	background: url(../images/Code-Logo.png);
 }
 /*end footer*/
